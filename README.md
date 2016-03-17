@@ -1,0 +1,1 @@
+# sftp-only-openshift
