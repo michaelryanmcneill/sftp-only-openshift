@@ -15,6 +15,7 @@ Application Options
 -------------------
 Domain:     namespace
 Cartridges: php-5.4
+Source Code: https://github.com/michaelryanmcneill/sftp-only-openshift.git
 Gear Size:  default
 Scaling:    no
 
