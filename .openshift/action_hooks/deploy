@@ -11,3 +11,8 @@ if [ ! -d "${dest_dir}" ]; then
 fi
 
 ln -sf ${OPENSHIFT_DATA_DIR}html ${OPENSHIFT_REPO_DIR}public
+
+if [ ! -f "${OPENSHIFT_REPO_DIR}/.mvindex" ]; then
+  cp ${OPENSHIFT_REPO_DIR}index.php ${OPENSHIFT_DATA_DIR}html/index.php
+  echo "Copied ${OPENSHIFT_REPO_DIR}index.php to ${OPENSHIFT_DATA_DIR}html/index.php" > "${OPENSHIFT_REPO_DIR}/.mvindex"
+fi
